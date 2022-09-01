@@ -21,9 +21,7 @@ public class CountThread extends Thread {
     }
 
     public void run() {
-        while (A < B) {
-            System.out.println(A);
-            A++;
-        }
+        for (int i = A; i < B; i++)
+            System.out.println(i);
     }
 }

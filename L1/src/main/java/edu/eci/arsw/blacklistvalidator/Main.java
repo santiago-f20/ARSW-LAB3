@@ -14,14 +14,8 @@ import java.util.List;
 public class Main {
 
     public static void main(String a[]) {
-        long startTime = System.nanoTime();
         HostBlackListsValidator hblv = new HostBlackListsValidator();
-        // List<Integer> blackListOcurrences = hblv.checkHost("200.24.34.55");
-        List<Integer> blackListOcurrences = hblv.checkHost("212.24.24.55", 100);
-        // System.out.println("" + Runtime.getRuntime().availableProcessors());
+        List<Integer> blackListOcurrences = hblv.checkHost("200.24.34.55", 1000);
         System.out.println("The host was found in the following blacklists:" + blackListOcurrences);
-        // long endTime = System.nanoTime();
-        // long totalTime = endTime - startTime;
-        // System.out.println(totalTime);
     }
 }
